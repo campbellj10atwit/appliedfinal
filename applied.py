@@ -3,11 +3,7 @@ import sqlite3
 #setting up the database connection and cursor 
 con = sqlite3.connect('assignment3.db')
 cur = con.cursor()
-#users[3] = ['ADMIN', 'INSTRUCTOR', 'STUDENT']
-#for i in users:
 
-cur.execute("UPDATE student SET schedule = '12345, '")
-cur.execute("UPDATE courses SET num_students = 1, students = '10001, '")
 
 #check login func, returns empty array if invalid login info, else returns name and surname
 def check_login(type, uname, pword):
